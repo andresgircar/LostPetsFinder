@@ -82,3 +82,20 @@ main .hero {
     font-family: 'Quicksand';
     font-weight: bolder;
 }
+
+/*Title container*/
+main .title-cont {
+    width: 45%;
+    margin: 0 auto;
+    background-color: var(--main-color);
+    border-radius: 1rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -3rem;
+}
+
+main .title-cont h4 {
+    margin: 0;
+    padding: 25px 10px;
+    text-align: center;
+}
