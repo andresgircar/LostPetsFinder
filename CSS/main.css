@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -54,6 +54,11 @@ main {
     width: 100%;
     position: relative;
     top: -9.7rem;
+}
+
+/*Menu button*/
+header .fixed-action-btn {
+    z-index: 2;
 }
 
 /*Estilos de hero*/
@@ -98,4 +103,18 @@ main .title-cont h4 {
     margin: 0;
     padding: 25px 10px;
     text-align: center;
+}
+
+/*Cards container*/
+
+main .cards-container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+
+main .cards-container .card img {
+    height: 30rem;
 }
