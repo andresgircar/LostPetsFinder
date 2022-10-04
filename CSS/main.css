@@ -114,7 +114,3 @@ main .cards-container {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem;
 }
-
-main .cards-container .card img {
-    height: 30rem;
-}
