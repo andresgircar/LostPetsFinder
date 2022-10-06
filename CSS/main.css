@@ -204,3 +204,12 @@ footer .footer-img {
 footer .footer-img img {
     width: 20rem;
 }
+footer .social-media {
+    width: 100%;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    text-align: center;
+}
+footer .social-media h6, span {
+    color: white;
+}
