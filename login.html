@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Quicksand:wght@300;400;600&amp;display=swap" rel="stylesheet">
-    <title>Lost Pets Finder</title>
+    <title>Lost Pets Finder - Login</title>
 </head>
 <body>
     <header>
@@ -30,7 +30,24 @@
         </div>
     </header>
     <main>
-        
+        <section class="login-container">
+            <h5>Iniciar sesión</h5>
+            <div class="img-container">
+                <img src="./img/logo.svg" alt="">
+            </div>
+            <form action="" id="login-form" method="post">
+                <div class="input-field">
+                    <input id="email" type="email" required>
+                    <label for="email">Correo Electrónico</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" name="password" id="password">
+                    <label for="password">Contraseña</label>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action" id="login">Ingresar <i class="material-icons">send</i> </button>
+            </form>
+            <a class="create-account" href="register.html">¿No tienes una cuenta? Regístrate aquí</a>
+        </section>
     </main>
     <script src="./JS/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

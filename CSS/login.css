@@ -2,11 +2,12 @@
 :root {
     /*Colors*/
     --main-color: #75ecd6;
-    --header-color: rgba(117, 236, 214, 0.8);
-    --hero-bg-color: rgba(96, 173, 214, 0.85);
+    --header-color: rgba(117, 236, 214, 0.98);
+    --hero-bg-color: rgba(96, 173, 214, 0.9);
     --footer-bg-color: rgb(96, 173, 214);
     --green: #0e3803;
     --white: #ffffff;
+    --login-container-bg: rgba(255, 255, 255, 0.8)
 }
 
 html {
@@ -22,6 +23,9 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background: url(../img/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Estilos header*/
@@ -32,11 +36,12 @@ header {
     z-index: 1;
 }
 header .logo{
-    width: 28%;
+    width: 80%;
     margin: 0 auto;
     padding: 5px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 header .logo img{
@@ -50,4 +55,44 @@ header .logo h2 {
     font-weight: bolder;
     text-align: center;
     margin: 0;
+}
+/*ESTILOS DEL MAIN*/
+main {
+    height: 100%;
+    background-color: var(--hero-bg-color);
+    padding-top: 5%;
+}
+main .login-container {
+    width: 40%;
+    margin: 0 auto 0;
+    display: grid;
+    padding: 2rem 4rem;
+    grid-template-columns: repeat(1, auto);
+    border-radius: 10px;
+    background-color: var(--login-container-bg);
+}
+main .login-container h5 {
+    display: block;
+    margin: 0px auto 15px;
+}
+main .login-container .img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main .login-container .img-container img {
+    width: 15rem;
+}
+
+main .login-container form button {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+}
+main .login-container form button i {
+    padding-left: 0.5rem;
+}
+main .login-container .create-account {
+    display: block;
+    margin: 10px auto;
 }
