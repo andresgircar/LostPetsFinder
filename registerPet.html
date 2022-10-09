@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/registerPet.css">
+    <link rel="shortcut icon" href="./img/logo.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Quicksand:wght@300;400;600&amp;display=swap" rel="stylesheet">
+    <title>Registra tu mascota</title>
+</head>
+<body>
+    <header>
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large teal accent-3">
+                <i class="large material-icons">menu</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating light-blue darken-4" href="index.html"><i class="material-icons">home</i></a></li>
+                <li><a class="btn-floating blue darken-1" href="login.html"><i class="material-icons">person</i></a></li>
+                <li><a class="btn-floating green" href="registerPet.html"><i class="material-icons">edit</i></a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="./img/logo.svg" alt="">
+            <h2>Lost Pets Finder</h2>
+        </div>
+    </header>
+    <main>
+        <section class="pet-form-container">
+            <div class="img-container">
+                <img src="./img/logo.svg" alt="">
+            </div>
+            <form action="">
+                <div class="input-field">
+                    <input id="pet-name" type="text" required>
+                    <label for="pet-name">Nombre de tu mascota</label>
+                </div>
+                <div class="input-field">
+                    <input id="pet-raza" type="text" required>
+                    <label for="pet-raza">Raza de tu mascota</label>
+                </div>
+                <input type="text" name="" id="fecha-perdida" class="datepicker" placeholder="Fecha de desaparación">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="logo-footer">
+                <img src="./img/logo.svg" alt="">
+            </div>
+            <section class="footer-menu">
+                <ul>
+                    <li><a href="index.html">Home <i class="material-icons">home</i></a></li>
+                    <li><a href="registerPet.html">Registra tu mascota <i class="material-icons">create</i></a></li>
+                    <li><a href="delete.html">Eliminar <i class="material-icons">delete</i></a></li>
+                </ul>
+            </section>
+            <section class="footer-img">
+                <img src="./img/misiontic.png" alt="">
+            </section>
+            <section class="social-media">
+                <h6>Nuestras redes</h6>
+                <span><i class="material-icons">facebook</i></span>
+                <span><i class="material-icons">camera</i></span>
+                <span><i class="material-icons">reddit</i></span>
+            </section>
+        </div>
+    </footer>
+    <script src="./JS/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
