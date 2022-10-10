@@ -20,7 +20,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /*Estilos header*/
@@ -64,6 +64,14 @@ main .pet-form-container .img-container {
 main .pet-form-container .img-container img {
     width: 15rem;
 }
+main .pet-form-container form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+}
+
 
 /*Footer*/
 footer {
